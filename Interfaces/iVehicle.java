@@ -1,6 +1,6 @@
-public interface iVehicle {
+interface iVehicle {
 
-    public int numberOfWheels;
+    public int numberOfWheels
 
     public void startEngine();
 
@@ -8,5 +8,5 @@ public interface iVehicle {
 
     public void horn();
 
-    public int weight;
+    public int weight
 }

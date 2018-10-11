@@ -4,7 +4,7 @@ class Car implements iVehicle {
 
     }
 
-    public int number of wheels = 4;
+    public int numberOfWheels = 4;
 
     public int weight = 1000;
 
