@@ -13,6 +13,8 @@ class Animals {
 
     public ArrayList<String> colors;
 
+    public ArrayList<Animals> animals;
+
     public void makeSound(){
 
     }
@@ -38,5 +40,9 @@ class Animals {
         myDog.makeSound();
         myDog.sleep();
         myDog.colors.add("yellow");
+
+        Animals myAnimals = new Animals();
+        myAnimals.animals.add(myCat);
+        myAnimals.animals.add(myDog);
     }
 }
