@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 class Dog extends Animals{
 
     public Dog(){

@@ -45,7 +45,7 @@ class Animals {
         System.out.println();
 
         for(int i = 0; i < myAnimals.size(); i++){
-            System.out.println(myAnimals[i]);
+            System.out.println(myAnimals.get(i).name);
         }
     }
 }
