@@ -9,11 +9,7 @@ class Animals {
 
     public String breed;
 
-    public int numberOfLegs;
-
-    public ArrayList<String> colors;
-
-    public ArrayList<Animals> animals;
+    public ArrayList<String> colors = new ArrayList<String>();
 
     public void makeSound(){
 
@@ -29,7 +25,6 @@ class Animals {
         myCat.breed = "calico";
         myCat.makeSound();
         myCat.sleep();
-        System.out.println(myCat.numberOfLegs);
         myCat.colors.add("brown");
         myCat.colors.add("white");
 
@@ -41,8 +36,16 @@ class Animals {
         myDog.sleep();
         myDog.colors.add("yellow");
 
-        Animals myAnimals = new Animals();
-        myAnimals.animals.add(myCat);
-        myAnimals.animals.add(myDog);
+        ArrayList<Animals> myAnimals = new ArrayList<Animals>();
+        myAnimals.add(myCat);
+        myAnimals.add(myDog);
+
+        System.out.println();
+        System.out.println();
+        System.out.println();
+
+        for(int i = 0; i < myAnimals.size(); i++){
+            System.out.println(myAnimals[i]);
+        }
     }
 }

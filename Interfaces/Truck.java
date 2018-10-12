@@ -21,6 +21,9 @@ class Truck implements iVehicle {
     }
 
     public static void main(String args[]){
-
+        Truck myTruck = new Truck();
+        myTruck.horn();
+        myTruck.startEngine();
+        myTruck.stopEngine();
     }
 }
